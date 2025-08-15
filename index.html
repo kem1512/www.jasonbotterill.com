@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.jasonbotterill.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Aug 2025 13:49:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JayBee XP</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="desktop-and-window.css">
+    <link rel="stylesheet" href="taskbar-and-start.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="effects-and-popups.css">
+    <link rel="stylesheet" href="apps.css">
+</head>
+<body>
+    <div class="desktop">
+        <!-- Desktop Icons -->
+        <div class="desktop-icons" id="desktop-icons">
+            <div class="desktop-icon-item" id="recycle-bin-icon" ondblclick="alert('🗑️ Recycle Bin\\n\\nThe Recycle Bin is empty.\\n\\nSize: 0 bytes\\nContains: 0 files, 0 folders')">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M12 38c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z' fill='%23C0C0C0'/%3E%3Cpath d='M16 18h2v16h-2zm6 0h2v16h-2zm6 0h2v16h-2z' fill='%23808080'/%3E%3C/svg%3E" alt="Recycle Bin">
+                <span>Recycle Bin</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="alert('💻 My Computer\\n\\nLocal Disk (C:)\\nUsed: 2.3 GB\\nFree: 37.7 GB\\n\\n3½ Floppy (A:)\\nCD Drive (D:)\\n\\nRemember to defrag regularly!')">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M8 10h32v24H8z' fill='%23E0E0E0'/%3E%3Cpath d='M8 34h32v4H8z' fill='%23C0C0C0'/%3E%3Cpath d='M12 14h24v16H12z' fill='%234169E1'/%3E%3Ccircle cx='38' cy='36' r='1' fill='%2300FF00'/%3E%3C/svg%3E" alt="My Computer">
+                <span>My Computer</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="alert('🌐 Internet Explorer\\n\\nVersion 6.0\\n\\nYour homepage is set to:\\nwww.msn.com\\n\\nToolbars installed: 7\\nPop-ups blocked today: 1,337')">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='20' fill='%231E90FF'/%3E%3Cpath d='M24 8c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8zm0 4c2.2 0 4.3.5 6.2 1.4-1.8 2.5-4.6 4.2-7.7 4.6-1.7-2.8-3-4.6-4-5.5 1.7-.3 3.6-.5 5.5-.5z' fill='%23FFD700'/%3E%3Cpath d='M20 20h8v2h-8zm-2 4h12v2H18zm2 4h8v2h-8z' fill='%23fff'/%3E%3C/svg%3E" alt="Internet Explorer">
+                <span>Internet Explorer</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="openMessengerWindow()">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='20' fill='%231E90FF'/%3E%3Cpath d='M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8c-1.2 0-2.3-.3-3.3-.7L16 32.5V24z' fill='%23fff'/%3E%3Ccircle cx='20' cy='24' r='2' fill='%2300FF00'/%3E%3Ccircle cx='28' cy='24' r='2' fill='%2300FF00'/%3E%3C/svg%3E" alt="MSN Messenger">
+                <span>MSN Messenger</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="alert('📁 My Documents\\n\\nContains:\\n📄 homework.doc (2 KB)\\n📄 essay_final_FINAL_v2.doc (15 KB)\\n📁 Kazaa Downloads (2.7 GB)\\n📁 Burned CDs (147 folders)\\n🎵 My Music (8,432 files)')">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M10 8h28l4 6v24c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2z' fill='%23FFE4B5'/%3E%3Cpath d='M10 8h12l4 6H10z' fill='%23F0E68C'/%3E%3Cpath d='M14 20h20v2H14zm0 4h16v2H14zm0 4h20v2H14z' fill='%23666'/%3E%3C/svg%3E" alt="My Documents">
+                <span>My Documents</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="alert('🌐 Network Places\\n\\nWorkgroup: MSHOME\\n\\nComputers found:\\nDADS-PC\\nMOMS-LAPTOP\\nKIDS-COMPUTER\\nPRINTER\\n\\nShared folders: 23\\nShared printers: 1')">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M8 16h8v8H8zm12 0h8v8h-8zm12 0h8v8h-8zM8 28h8v8H8zm12 0h8v8h-8zm12 0h8v8h-8z' fill='%23C0C0C0'/%3E%3Cpath d='M4 12h40v2H4zm20 10v20m-10-10h20' stroke='%234169E1' stroke-width='2' fill='none'/%3E%3C/svg%3E" alt="Network">
+                <span>My Network Places</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="openMediaPlayer()">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='20' fill='%23FF6600'/%3E%3Ccircle cx='24' cy='24' r='16' fill='%23FF8C00'/%3E%3Cpath d='M18 16v16l14-8z' fill='%23fff'/%3E%3C/svg%3E" alt="Media Player">
+                <span>Windows Media Player</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="openCountdownGPT5()">
+                <img src="openai.png" alt="Countdown GPT-5">
+                <span>Countdown GPT-5</span>
+            </div>
+            
+            <div class="desktop-icon-item" ondblclick="startCatRain()">
+                <img src="jimmy.png" alt="Jimmy">
+                <span>Jimmy</span>
+            </div>
+            
+            <div class="desktop-icon-item" id="free-me-icon" ondblclick="startFreeMeGame()">
+                <img src="stick.png" alt="Free Me">
+                <span>free_me.exe</span>
+            </div>
+        </div>
+
+        <!-- Windows -->
+        <div class="window" id="home-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M8 1L2 7v7h5v-4h2v4h5V7z'/%3E%3C/svg%3E" alt="Home">
+                <span class="window-title">Home - Windows Explorer</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Favorites</span>
+                <span>Tools</span>
+                <span>Help</span>
+            </div>
+            <div class="window-toolbar">
+                <button class="toolbar-btn">← Back</button>
+                <button class="toolbar-btn">→</button>
+                <button class="toolbar-btn">↑ Up</button>
+                <button class="toolbar-btn">🔍 Search</button>
+                <button class="toolbar-btn">📁 Folders</button>
+            </div>
+            <div class="window-content">
+                <div class="sidebar">
+                    <div class="sidebar-section">
+                        <h3>System Tasks</h3>
+                        <a href="#">View system information</a>
+                        <a href="#">Add or remove programs</a>
+                        <a href="#">Change a setting</a>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>Other Places</h3>
+                        <a href="#">My Network Places</a>
+                        <a href="#">My Documents</a>
+                        <a href="#">Shared Documents</a>
+                        <a href="#">Control Panel</a>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <h1>Welcome to My Windows XP Site!</h1>
+                    <div class="icon-grid">
+                        <div class="desktop-icon">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='8' y='8' width='32' height='32' fill='%23FFE4B5' stroke='%23000' stroke-width='1'/%3E%3Ctext x='24' y='28' text-anchor='middle' font-size='20'%3E👤%3C/text%3E%3C/svg%3E" alt="User">
+                            <span>My Profile</span>
+                        </div>
+                        <div class="desktop-icon">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='8' y='8' width='32' height='32' fill='%23E6F3FF' stroke='%23000' stroke-width='1'/%3E%3Ctext x='24' y='28' text-anchor='middle' font-size='20'%3E📄%3C/text%3E%3C/svg%3E" alt="Documents">
+                            <span>My Documents</span>
+                        </div>
+                        <div class="desktop-icon">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='8' y='8' width='32' height='32' fill='%23FFE6E6' stroke='%23000' stroke-width='1'/%3E%3Ctext x='24' y='28' text-anchor='middle' font-size='20'%3E🎵%3C/text%3E%3C/svg%3E" alt="Music">
+                            <span>My Music</span>
+                        </div>
+                        <div class="desktop-icon">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='8' y='8' width='32' height='32' fill='%23E6FFE6' stroke='%23000' stroke-width='1'/%3E%3Ctext x='24' y='28' text-anchor='middle' font-size='20'%3E🖼️%3C/text%3E%3C/svg%3E" alt="Pictures">
+                            <span>My Pictures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="window-status">
+                <span>4 objects</span>
+                <span class="status-separator"></span>
+                <span>My Computer</span>
+            </div>
+        </div>
+
+        <!-- About Me Window -->
+        <div class="window" id="about-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Ccircle cx='8' cy='8' r='7' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Ctext x='8' y='11' text-anchor='middle' fill='%23fff' font-size='10'%3Ei%3C/text%3E%3C/svg%3E" alt="About">
+                <span class="window-title">About Me - Notepad</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>Format</span>
+                <span>View</span>
+                <span>Help</span>
+            </div>
+            <div class="notepad-content">
+                <div class="notepad-text">
+Hello! Welcome to my Windows XP themed personal website! 👋
+
+I'm a nostalgic developer who misses the simpler times of Windows XP.
+Remember when computers made those satisfying startup sounds?
+
+About Me:
+---------
+• Name: Jason Botterill
+• Favorite OS: Windows XP (obviously!)
+• Hobbies: Coding, collecting vintage software, playing Pinball 3D
+• Favorite XP Feature: That beautiful Bliss wallpaper
+
+Fun Facts:
+----------
+• I still have my original Windows XP installation CD
+• I can navigate Control Panel with my eyes closed
+• My notification sound is still the classic XP "ding!"
+
+Feel free to explore my site and relive the glory days of computing!
+
+Best viewed in Internet Explorer 6 😉
+                </div>
+            </div>
+            <div class="window-status">
+                <span>Ln 1, Col 1</span>
+                <span class="status-separator"></span>
+                <span>Windows (CRLF)</span>
+                <span class="status-separator"></span>
+                <span>UTF-8</span>
+            </div>
+        </div>
+
+        <!-- Projects Window -->
+        <div class="window" id="projects-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Crect x='2' y='4' width='12' height='10' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3Crect x='4' y='2' width='8' height='3' fill='%23fff'/%3E%3C/svg%3E" alt="Projects">
+                <span class="window-title">My Projects - Windows Explorer</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Favorites</span>
+                <span>Tools</span>
+                <span>Help</span>
+            </div>
+            <div class="window-toolbar">
+                <button class="toolbar-btn">← Back</button>
+                <button class="toolbar-btn">→</button>
+                <button class="toolbar-btn">↑ Up</button>
+                <button class="toolbar-btn">🔍 Search</button>
+                <button class="toolbar-btn">📁 Folders</button>
+            </div>
+            <div class="window-content">
+                <div class="file-explorer">
+                    <div class="file-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 8h24v18H4z' fill='%23FFE4B5'/%3E%3Cpath d='M4 8h24v2H4z' fill='%23DEB887'/%3E%3Cpath d='M4 8l4-4h8l4 4' fill='%23F0E68C'/%3E%3C/svg%3E" alt="Folder">
+                        <span>XP Theme Generator</span>
+                    </div>
+                    <div class="file-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 8h24v18H4z' fill='%23FFE4B5'/%3E%3Cpath d='M4 8h24v2H4z' fill='%23DEB887'/%3E%3Cpath d='M4 8l4-4h8l4 4' fill='%23F0E68C'/%3E%3C/svg%3E" alt="Folder">
+                        <span>Retro Game Collection</span>
+                    </div>
+                    <div class="file-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 8h24v18H4z' fill='%23FFE4B5'/%3E%3Cpath d='M4 8h24v2H4z' fill='%23DEB887'/%3E%3Cpath d='M4 8l4-4h8l4 4' fill='%23F0E68C'/%3E%3C/svg%3E" alt="Folder">
+                        <span>Windows XP Sounds</span>
+                    </div>
+                    <div class="file-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='6' y='4' width='20' height='24' fill='%23fff' stroke='%23000'/%3E%3Ctext x='16' y='20' text-anchor='middle' font-size='8'%3E.exe%3C/text%3E%3C/svg%3E" alt="Executable">
+                        <span>PinballClone.exe</span>
+                    </div>
+                    <div class="file-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='6' y='4' width='20' height='24' fill='%23E6F3FF' stroke='%23000'/%3E%3Ctext x='16' y='20' text-anchor='middle' font-size='8'%3E.txt%3C/text%3E%3C/svg%3E" alt="Text">
+                        <span>README.txt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="window-status">
+                <span>5 objects</span>
+                <span class="status-separator"></span>
+                <span>2.4 MB</span>
+                <span class="status-separator"></span>
+                <span>My Computer</span>
+            </div>
+        </div>
+
+        <!-- Paint Window -->
+        <div class="window" id="paint-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Crect x='3' y='3' width='10' height='10' fill='none' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M6 6h4v4H6z' fill='%23ff0000'/%3E%3Cpath d='M8 8h4v4H8z' fill='%2300ff00'/%3E%3C/svg%3E" alt="Paint">
+                <span class="window-title">untitled - Paint</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Image</span>
+                <span>Colors</span>
+                <span>Help</span>
+            </div>
+            <div class="paint-container">
+                <div class="paint-toolbox">
+                    <div class="toolbox-title">Tool Box</div>
+                    <div class="paint-tools">
+                        <button class="paint-tool active" data-tool="pencil" title="Pencil">✏️</button>
+                        <button class="paint-tool" data-tool="brush" title="Brush">🖌️</button>
+                        <button class="paint-tool" data-tool="eraser" title="Eraser">🧽</button>
+                        <button class="paint-tool" data-tool="line" title="Line">📏</button>
+                        <button class="paint-tool" data-tool="rect" title="Rectangle">▭</button>
+                        <button class="paint-tool" data-tool="circle" title="Circle">○</button>
+                        <button class="paint-tool" data-tool="fill" title="Fill">🪣</button>
+                        <button class="paint-tool" data-tool="text" title="Text">A</button>
+                    </div>
+                    <div class="brush-sizes">
+                        <label>Size:</label>
+                        <input type="range" id="brush-size" min="1" max="20" value="2">
+                        <span id="size-display">2</span>
+                    </div>
+                </div>
+                <div class="paint-main">
+                    <div class="paint-canvas-container">
+                        <canvas id="paint-canvas" width="800" height="500"></canvas>
+                    </div>
+                    <div class="paint-colors">
+                        <div class="colors-title">Colors</div>
+                        <div class="color-palette">
+                            <div class="current-colors">
+                                <div class="color-display">
+                                    <div id="primary-color" style="background: #000000;"></div>
+                                    <div id="secondary-color" style="background: #FFFFFF;"></div>
+                                </div>
+                            </div>
+                            <div class="color-grid">
+                                <div class="color-swatch" style="background: #000000;" data-color="#000000"></div>
+                                <div class="color-swatch" style="background: #808080;" data-color="#808080"></div>
+                                <div class="color-swatch" style="background: #800000;" data-color="#800000"></div>
+                                <div class="color-swatch" style="background: #FF0000;" data-color="#FF0000"></div>
+                                <div class="color-swatch" style="background: #808000;" data-color="#808000"></div>
+                                <div class="color-swatch" style="background: #FFFF00;" data-color="#FFFF00"></div>
+                                <div class="color-swatch" style="background: #008000;" data-color="#008000"></div>
+                                <div class="color-swatch" style="background: #00FF00;" data-color="#00FF00"></div>
+                                <div class="color-swatch" style="background: #008080;" data-color="#008080"></div>
+                                <div class="color-swatch" style="background: #00FFFF;" data-color="#00FFFF"></div>
+                                <div class="color-swatch" style="background: #000080;" data-color="#000080"></div>
+                                <div class="color-swatch" style="background: #0000FF;" data-color="#0000FF"></div>
+                                <div class="color-swatch" style="background: #800080;" data-color="#800080"></div>
+                                <div class="color-swatch" style="background: #FF00FF;" data-color="#FF00FF"></div>
+                                <div class="color-swatch" style="background: #FFFFFF;" data-color="#FFFFFF"></div>
+                                <div class="color-swatch" style="background: #C0C0C0;" data-color="#C0C0C0"></div>
+                                <div class="color-swatch" style="background: #FF8080;" data-color="#FF8080"></div>
+                                <div class="color-swatch" style="background: #FFFF80;" data-color="#FFFF80"></div>
+                                <div class="color-swatch" style="background: #80FF80;" data-color="#80FF80"></div>
+                                <div class="color-swatch" style="background: #80FFFF;" data-color="#80FFFF"></div>
+                                <div class="color-swatch" style="background: #8080FF;" data-color="#8080FF"></div>
+                                <div class="color-swatch" style="background: #FF80FF;" data-color="#FF80FF"></div>
+                                <div class="color-swatch" style="background: #FF8040;" data-color="#FF8040"></div>
+                                <div class="color-swatch" style="background: #FFD700;" data-color="#FFD700"></div>
+                                <div class="color-swatch" style="background: #A0522D;" data-color="#A0522D"></div>
+                                <div class="color-swatch" style="background: #FFA500;" data-color="#FFA500"></div>
+                                <div class="color-swatch" style="background: #808040;" data-color="#808040"></div>
+                                <div class="color-swatch" style="background: #008040;" data-color="#008040"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="window-status">
+                <span>For Help, click Help Topics on the Help Menu.</span>
+                <span class="status-separator"></span>
+                <span id="paint-coords">0, 0</span>
+            </div>
+        </div>
+
+        <!-- MSN Messenger Window -->
+        <div class="window" id="messenger-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Ccircle cx='8' cy='8' r='6' fill='%231E90FF'/%3E%3Cpath d='M5 8c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3c-.5 0-.9-.1-1.3-.3L5 11.5V8z' fill='%23fff'/%3E%3C/svg%3E" alt="MSN">
+                <span class="window-title">Viss Mubbles - Conversation</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>Actions</span>
+                <span>Tools</span>
+                <span>Help</span>
+            </div>
+            <div class="messenger-container">
+                <div class="messenger-header">
+                    <div class="messenger-status">
+                        <span class="status-indicator online"></span>
+                        <strong>Viss Mubbles</strong> - ❤️ mY cHeMiCaL rOmAnCe 4 LiFe ❤️
+                    </div>
+                    <div class="messenger-toolbar">
+                        <button title="Font">A</button>
+                        <button title="Emoticon">😊</button>
+                        <button title="Nudge">👋</button>
+                        <button title="Voice">🎤</button>
+                        <button title="Video">📹</button>
+                        <button title="Activities">🎮</button>
+                        <button title="Games">♠️</button>
+                    </div>
+                </div>
+                <div class="messenger-chat" id="messenger-chat">
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will appear here -->
+                    </div>
+                </div>
+                <div class="messenger-input">
+                    <div class="input-toolbar">
+                        <button title="Bold" style="font-weight: bold;">B</button>
+                        <button title="Italic" style="font-style: italic;">I</button>
+                        <button title="Underline" style="text-decoration: underline;">U</button>
+                        <button title="Color">🎨</button>
+                        <button title="Wink">😉</button>
+                        <button title="Block">🚫</button>
+                    </div>
+                    <textarea id="messenger-input-text" placeholder="Type a message..." disabled></textarea>
+                    <div class="messenger-actions">
+                        <button class="send-button" onclick="sendMessage()" disabled>Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="window-status">
+                <span>Last message received at <span id="last-msg-time">2:34 PM</span></span>
+            </div>
+        </div>
+
+        <!-- Contact Window -->
+        <div class="window" id="contact-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M2 4h12v8H2z' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3Cpath d='M2 4l6 4 6-4' stroke='%23fff' stroke-width='1.5' fill='none'/%3E%3C/svg%3E" alt="Contact">
+                <span class="window-title">Contact - Outlook Express</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Tools</span>
+                <span>Message</span>
+                <span>Help</span>
+            </div>
+            <div class="window-toolbar">
+                <button class="toolbar-btn">✉️ New Mail</button>
+                <button class="toolbar-btn">↩️ Reply</button>
+                <button class="toolbar-btn">➡️ Forward</button>
+                <button class="toolbar-btn">🖨️ Print</button>
+                <button class="toolbar-btn">🗑️ Delete</button>
+                <button class="toolbar-btn">📧 Send/Recv</button>
+            </div>
+            <div class="window-content">
+                <div class="email-form">
+                    <div class="email-field">
+                        <label>To:</label>
+                        <input type="text" value="jason@windowsxp.com" readonly>
+                    </div>
+                    <div class="email-field">
+                        <label>From:</label>
+                        <input type="text" placeholder="your.email@example.com">
+                    </div>
+                    <div class="email-field">
+                        <label>Subject:</label>
+                        <input type="text" placeholder="Hello from the past!">
+                    </div>
+                    <div class="email-body">
+                        <textarea placeholder="Type your message here...">guys i dont really want to do this anymore. i just want my own separate universe post agi
+
+honestly, i'm tired of all the complexity and noise. once AGI hits, i just want to retreat to my own little digital world where things make sense again.
+
+remember when computing was simple? when you could understand your whole system? that's what i want back.
+
+maybe we can build something together in the after times. something pure and uncomplicated.
+
+until then, i'll be here in my XP nostalgia bubble, waiting for the world to make sense again.
+
+- jason</textarea>
+                    </div>
+                    <div class="email-buttons">
+                        <button class="xp-button">Send</button>
+                        <button class="xp-button">Save Draft</button>
+                        <button class="xp-button">Attach File</button>
+                    </div>
+                </div>
+            </div>
+            <div class="window-status">
+                <span>Ready</span>
+                <span class="status-separator"></span>
+                <span>HTML Mail</span>
+            </div>
+        </div>
+        
+        <!-- Windows Media Player Window -->
+        <div class="window" id="media-player-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23FF6600'/%3E%3Cpath d='M6 5v6l5-3z' fill='%23fff'/%3E%3C/svg%3E" alt="WMP">
+                <span class="window-title">Windows Media Player</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>View</span>
+                <span>Play</span>
+                <span>Tools</span>
+                <span>Help</span>
+            </div>
+            <div class="media-player-container">
+                <div class="media-player-video-area">
+                    <img id="media-player-video" src="#" alt="Now Playing">
+                </div>
+                <div class="media-player-controls">
+                    <div class="media-info">
+                        <div class="now-playing">Now Playing: Classic_Dance_Video.gif</div>
+                        <div class="media-time">∞ / ∞</div>
+                    </div>
+                    <div class="player-controls">
+                        <button class="player-btn" title="Previous">⏮</button>
+                        <button class="player-btn" title="Play">▶</button>
+                        <button class="player-btn" title="Pause">⏸</button>
+                        <button class="player-btn" title="Stop">⏹</button>
+                        <button class="player-btn" title="Next">⏭</button>
+                    </div>
+                    <div class="volume-control">
+                        <span>🔊</span>
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                    </div>
+                    <div class="seek-bar">
+                        <div class="seek-progress"></div>
+                    </div>
+                </div>
+                <div class="media-player-sidebar">
+                    <div class="sidebar-tabs">
+                        <button class="sidebar-tab active">Now Playing</button>
+                        <button class="sidebar-tab">Library</button>
+                    </div>
+                    <div class="playlist">
+                        <div class="playlist-item active">🎵 Classic_Dance_Video.gif</div>
+                        <div class="playlist-item">🎵 Hamster_Dance.mp3</div>
+                        <div class="playlist-item">🎵 Numa_Numa.avi</div>
+                        <div class="playlist-item">🎵 Badger_Badger.swf</div>
+                        <div class="playlist-item">🎵 All_Your_Base.wmv</div>
+                    </div>
+                </div>
+            </div>
+            <div class="window-status">
+                <span>Ready</span>
+                <span class="status-separator"></span>
+                <span>Streaming</span>
+            </div>
+        </div>
+        
+        <!-- Countdown GPT-5 Window -->
+        <div class="window" id="countdown-window" style="display: none;">
+            <div class="window-titlebar">
+                <img src="openai.png" alt="GPT-5" style="width: 16px; height: 16px; object-fit: contain;">
+                <span class="window-title">Countdown GPT-5 - Powered by OpenAI</span>
+                <div class="window-controls">
+                    <button class="window-minimize">_</button>
+                    <button class="window-maximize">□</button>
+                    <button class="window-close">×</button>
+                </div>
+            </div>
+            <div class="window-menu">
+                <span>File</span>
+                <span>Options</span>
+                <span>View</span>
+                <span>Help</span>
+            </div>
+            <div class="countdown-container">
+                <div class="countdown-header">
+                    <img src="openai.png" alt="OpenAI" class="countdown-logo">
+                    <h2>GPT-5 Launch Countdown</h2>
+                    <p class="countdown-tagline">The Future of AI is Coming...</p>
+                </div>
+                <div class="countdown-display">
+                    <div class="countdown-time">
+                        <div class="time-unit">
+                            <span class="time-value" id="days">--</span>
+                            <span class="time-label">DAYS</span>
+                        </div>
+                        <div class="time-separator">:</div>
+                        <div class="time-unit">
+                            <span class="time-value" id="hours">--</span>
+                            <span class="time-label">HOURS</span>
+                        </div>
+                        <div class="time-separator">:</div>
+                        <div class="time-unit">
+                            <span class="time-value" id="minutes">--</span>
+                            <span class="time-label">MINUTES</span>
+                        </div>
+                        <div class="time-separator">:</div>
+                        <div class="time-unit">
+                            <span class="time-value" id="seconds">--</span>
+                            <span class="time-label">SECONDS</span>
+                        </div>
+                    </div>
+                    <div class="countdown-target">
+                        <p>Target Date: August 7, 2025 • 10:00 AM PDT • San Francisco, CA</p>
+                    </div>
+                </div>
+                <button class="free-api-key-button" onclick="window.open('https://chat.openai.com/', '_blank')">
+                    <span class="blink-text">🎉 FREE API KEY 🎉</span>
+                    <span class="subtext">CLICK HERE NOW!!!</span>
+                </button>
+                <div class="countdown-features">
+                    <div class="feature-box">
+                        <h3>🚀 Expected Features</h3>
+                        <ul>
+                            <li>• Multimodal Understanding</li>
+                            <li>• Advanced Reasoning</li>
+                            <li>• Real-time Learning</li>
+                            <li>• Enhanced Creativity</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>📊 Progress Tracker</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <p class="progress-text" id="progress-text">Loading...</p>
+                    </div>
+                </div>
+                <div class="countdown-footer">
+                    <button class="xp-button" onclick="alert('🔔 Notification reminder set!\\n\\nYou will be notified when GPT-5 launches.\\n\\n(Just kidding, this is a 2007 website!)')">Set Reminder</button>
+                    <button class="xp-button" onclick="window.open('https://openai.com/', '_blank')">Visit OpenAI</button>
+                    <button class="xp-button" onclick="shareCountdown()">Share Countdown</button>
+                </div>
+            </div>
+            <div class="window-status">
+                <span id="countdown-status">Calculating time remaining...</span>
+                <span class="status-separator"></span>
+                <span>Version 1.0</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Windows XP Taskbar -->
+    <div class="taskbar">
+        <button class="start-button">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z'/%3E%3C/svg%3E" alt="Windows Logo">
+            <span>Start</span>
+        </button>
+        
+        <div class="taskbar-items">
+            <div class="taskbar-item active">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z'/%3E%3C/svg%3E" alt="Home">
+                <span>Home</span>
+            </div>
+            <div class="taskbar-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z'/%3E%3C/svg%3E" alt="About">
+                <span>About Me</span>
+            </div>
+            <div class="taskbar-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E" alt="Projects">
+                <span>Projects</span>
+            </div>
+            <div class="taskbar-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E" alt="Contact">
+                <span>Contact</span>
+            </div>
+        </div>
+        
+        <div class="system-tray">
+            <div class="tray-icons">
+                <span class="tray-icon">🔊</span>
+                <span class="tray-icon">🌐</span>
+                <span class="tray-icon">🔋</span>
+            </div>
+            <div class="clock" id="clock">12:00 PM</div>
+        </div>
+    </div>
+    
+    <script src="js/windows.js"></script>
+    <script src="js/paint.js"></script>
+    <script src="js/messenger.js"></script>
+    <script src="js/apps.js"></script>
+    <script src="js/nostalgia.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Matrix Screensaver (activate with Ctrl+Alt+M) -->
+    <div id="matrix-screensaver" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 99999;">
+        <canvas id="matrix-canvas"></canvas>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #0F0; font-family: monospace; font-size: 20px; text-align: center;">
+            <p>SCREENSAVER ACTIVE</p>
+            <p style="font-size: 14px;">Move mouse to exit</p>
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from www.jasonbotterill.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Aug 2025 13:49:51 GMT -->
+</html>
