@@ -41,7 +41,7 @@ const startMenuHTML = `
 <div class="start-menu" id="start-menu" style="display: none;">
     <div class="start-menu-header">
         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='20' fill='%23E0E0E0'/%3E%3Ctext x='24' y='32' text-anchor='middle' font-size='24'%3E👤%3C/text%3E%3C/svg%3E" alt="User">
-        <span>Jason Botterill</span>
+        <span>Aryaskr</span>
     </div>
     <div class="start-menu-content">
         <div class="start-menu-left">

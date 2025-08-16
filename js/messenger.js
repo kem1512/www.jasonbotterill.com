@@ -105,7 +105,7 @@ function addMessage(sender, text) {
         
         if (sender === 'self') {
             messageDiv.innerHTML = `
-                <span class="sender">Jason (${time}) says:</span>
+                <span class="sender">Aryaskr (${time}) says:</span>
                 <div class="text">${processEmoticons(text)}</div>
             `;
         } else {
