@@ -572,7 +572,7 @@ function createFallingCat() {
     const size = 40 + Math.random() * 40; // 40-80px
     
     // Randomly choose between jimmy.png and cat.png
-    const catImage = Math.random() < 0.5 ? 'jimmy.png' : 'cat.png';
+    const catImage = Math.random() < 0.5 ? 'aryaskr.png' : 'cat.png';
     
     cat.style.cssText = `
         position: absolute;
